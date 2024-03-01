@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE = edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;800&display=swap" rel="stylesheet">
+	<link href="space.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<br>
+	<center>	
+		<a href="index.html" style="bottom: 10px;">
+			<img class = "companyLogo" src="assets/companyLogo.jpg.png" style="width: 200px;" alt=""/>
+		</a>
+	</center>
+	<hr>
+	<div id="nav-placeholder"></div>
+	<script>
+		$(function(){
+			$("#nav-placeholder").load("navbar.html");
+		});
+	</script>
+	<div class="homePageBannerSection col-xl-12" style="padding: 0px;">
+		<div class="container-fluid custom-container">
+			<div class="row">
+				<div class="card card-overlay" style="width: 100%;">
+					<div class="overlay">
+						<div class="overlay-content" style="max-width: 80%">
+							<h1 id="bannerLabel1" class="card-title"><b>O N G O I N G &emsp;R E S E A R C H</b></h1>
+						</div>
+					</div>
+					<div class="image-container">
+						<img class="card-img" src="assets/solarBackground.jpg" alt="homePageBannerImage">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid custom-container" style="background-color: lightgray; display: flex; justify-content: center; align-items: center; height: 120px;">
+			<p style="margin: 0; font-size: 32px;"><b>EXOPLANETS</b></p>
+		</div>
+		<br><br>
+		<center><h5 class = "researchTitle"><b>TRANSMISSION SPECTROSCOPY AND NEXT-GENERATION BAYESIAN MODELING FRAMEWORKS (DR. LUIS WELBANKS)</b></h5></center>
+		<br>
+		<div class = "textHousing" style="display: flex; justify-content: center; align-content: center;">
+			<!-- <img src="assets/metallicity.png" alt="" style="width: 250px;">
+			<div style="padding-left: 20px;"></div> -->
+			<div class="textSection">
+				<p>Luis's research focuses on determining the chemical composition of exoplanet atmospheres, providing plausible abundance estimates of these chemicals species, exploring trends in these compositions to inform our understanding of planet formation, and devising next-generation Bayesian frameworks to maximize the information we derive from transmission spectra in a physically plausible way. His career goal is to enable reliable atmospheric characterization of exoplanets, including habitable planets, by pioneering new avenues in atmospheric retrieval modeling. Projects include:
+					<ul style="list-style-type:square">
+						<li>Aurora: A generalized retrieval framework for exoplanetary transmission Spectra</li>
+						<li>Mass–metallicity trends in transiting exoplanets</li>
+						<li>Degeneracies in retrievals of exoplanetary transmission spectra</li>
+						<li>Analysis of exoplanet spectra</li>
+					</ul>
+				</p>
+			</div>
+		</div>
+		<center><a href="https://luiswelbanks.com/projects/"><button style="margin-bottom: 100px; border: medium; border-bottom-color: black; border-style: solid;"><b>MORE ON LUIS'S PROJECTS</b></button></a></center>
+		<center><h5 class = "researchTitle"><b>EMISSION SPECTROSCOPY WITH SPACE TELESCOPES AND POPULATION-LEVEL TRENDS IN ATMOSPHERES (LINDSEY WISER)</b></h5></center>
+		<div class = "textHousing" style="display: flex; justify-content: center; align-content: center;">
+			<div class="textSection" style="">
+				<p>The growing number of known planets outside of our solar system (&gt;5,000) allows us to consider population-level trends in planetary composition and climate. Lindsey's primary PhD research focuses on modeling the atmospheres of these planets to identify trends and better understand planet formation pathways. She makes data-model comparisons through analysis of emission spectroscopy data with space telescopes: JWST, Hubble, and Spitzer. Ongoing projects include:
+					<ul style="list-style-type:square; max-width: 1000px;">
+						<li>Atmosphere model grids to fit emission spectroscopy data from Hubble and Spitzer. This work considers trends in a population of hot Jupiters and highlights the limitations of Hubble and Spitzer for constraining atmosphere properties.</li><br><br><br>
+						<li>Exoplanet spectral analysis with JWST as part of the MANATEE collaboration. MANATEE is observing nine planets at a range of temperatures (400–1200 K) and masses (1.1–360 Earth masses) to explore atmospheric chemical compositions, pressure-temperature profiles, global energy circulation, and the capabilities of JWST to detect spectral features in these varied conditions.</li>
+					</ul>
+				</p>
+			</div>
+		</div>
+		<br>
+		<center><a href="https://www.lindseywiser.com/science.html"><button style="margin-bottom: 100px; border: medium; border-bottom-color: black; border-style: solid;"><b>MORE ON LINDSEY'S PROJECTS</b></button></a></center>
+		<center><h5 class = "researchTitle"><b>HIGH-RESOLUTION, CROSS-CORRELATION SPECTROSCOPY (PETER SMITH)</b></h5></center>
+		<div class = "textHousing" style="display: flex; justify-content: center; align-content: center;">
+			<div class="textSection" style="">
+				<p>Peter's research focuses on ground-based characterization of exoplanets at high spectral resolution, and his work involves both the analysis of observational data and constructing atmospheric models. From data, he uses Bayesian statistical methods called retrievals to place robust constraints on the properties of exoplanets, such as molecular abundances and thermal structure. His theoretical work incorporates 3D atmospheric effects into 1D analytic models that can be used in retrievals with high computational efficiency. Peter is currently focused on short period gaseous planets called "hot Jupiters", but he has experience modeling the atmospheres of rocky planets as well. Peter's research requires a broad skillset including radiative transfer, thermodynamics, statistics, and high performance computing.
+				</p>
+			</div>
+		</div>
+		<center><a href="https://petercbsmith.github.io/exoplanets.html"><button style="margin-bottom: 100px; border: medium; border-bottom-color: black; border-style: solid;"><b>MORE ON PETER'S PROJECTS</b></button></a></center>
+		<div class="container-fluid custom-container" style="background-color: lightgray; height: 120px; display: flex; justify-content: center; align-items: center;">
+			<p style="margin: 0; font-size: 32px;"><b>STARS</b></p>
+		</div>
+		<br>
+		<center><h5 class = "researchTitle"><b>CHARACTERIZING M-DWARF ATMOSPHERES (AISHA IYER)</b></h5></center>
+		<div class = "textHousing" style="display: flex; justify-content: center; align-content: center;">
+			<div class="textSection" style="">
+				<p>Aisha is working on the characterization of M dwarf atmospheres. M dwarfs are extremely important targets to study, they are low mass stars that make up a silent majority ~70% of stars in the milky way galaxy, and are surrounded by terrestrial rocky planets. Characterizing their atmospheres have been a challenge thus far as these stars are not as hot as the sun or other FGK stars, therefore promoting formation of molecules throughout their atmospheres. Molecular species dominating M-dwarf atmospheres create a pseudo-continuum-like effect thereby rendering standard stellar abundance analysis on stellar spectra difficult. Aisha's PhD work aims to efficiently model these atmospheres and derive robust estimates of stellar physical properties as well as bulk chemical abundances of M-dwarfs in order to better understand the stellar environment around rocky potentially habitable worlds orbiting them. 
+				</p>
+			</div>
+		</div>
+		<center><a href="https://aishaiyer.github.io/"><button style="margin-bottom: 100px; border: medium; border-bottom-color: black; border-style: solid;"><b>MORE ON AISHA'S PROJECTS</b></button></a></center>
+		<center><h5 class = "researchTitle"><b>ATMOSPHERES OF LOW SURFACE GRAVITY M-DWARFS (IZZY HUCKABEE)</b></h5></center>
+		<div class = "textHousing" style="display: flex; justify-content: center; align-content: center;">
+			<div class="textSection" style="">
+				<p>Izzy is working with Aisha to characterize the atmospheres of low surface-gravity M-dwarfs. M-dwarf observations have provided estimates for parameters like surface temperature and metallicity, but a growing collection of low surface gravity M-dwarfs have created an additional challenge in our understanding. In particular, when observing some of these stars, we’ve found they appear on average one magnitude brighter in the infrared than typical M-dwarfs and this may be due to clouds. In addition, we are investigating the role of disequilibrium in T-dwarf atmospheres. These two modeling efforts work together to complete our understanding of substellar atmospheres: In cloud-free T-dwarfs, we analyze the role of disequilibrium alone, and in low-gravity M-dwarfs, which are hot enough to be in thermochemical equilibrium, we can analyze the role of clouds alone. After creating a self-consistent grid of forward models, we will implement Starfish, a Gaussian process mitigation error routine for Bayesian retrievals. In addition, Izzy is investigating TTVs and developing analysis code with the Exoplanet Watch project at JPL.
+				</p>
+			</div>
+		</div>
+
+	
+		<br>
+		<div class="container-fluid custom-container" style="background-color: lightgray; display: flex; justify-content: center; align-items: center; height: 120px;">
+			<p style="margin: 0; font-size: 32px;"><b>DISKS</b></p>
+		</div>
+		<center><br><h2>COMING SOON</h2></center>
+		<br><br><br><br>
+	</div>
+</body>
+</html>
