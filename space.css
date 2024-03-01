@@ -59,6 +59,12 @@ button:hover {
     margin-bottom: 40px;
 }
 
+.bg-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 40px; 
+}
+
 .img {
     object-fit: cover;
     width: 100%;
@@ -381,6 +387,10 @@ p1 {
     }
 
     .bg-group-pets {
+        display: block;
+    }
+
+    .bg-grid {
         display: block;
     }
 
