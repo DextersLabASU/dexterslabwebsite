@@ -1,12 +1,12 @@
 
 newsWidgetData = [
-    {
+    /*{
         title: "Announcement Title",
         date: "Nov 2022",
         content: "Congratulations to the JWST Transiting Exoplanet Community Early Release Science Program Team, including Luis and Mike, for their publication series on the transmission spectrum of the hot Jupiter WASP-39b!",
         links: ["TEST LINK 1", "TEST LINK 2"],
         images: ["TEST IMAGE 1", "TEST IMAGE 2"]
-    },
+    },*/
     {
         title: "New Grad Welcome 2022",
         date: "Aug 2022",
