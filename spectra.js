@@ -3,7 +3,7 @@ const xsecs = (1800, 20000);
 const labels = ["$f$", "[M/H]", "C/O", "$\\times R_p$", "log$_{10}$$\\kappa_{cld}$"];
 const hdr = 'P[bar]                T[K]';
 let T, P, H2, He, H2O, CO, CO2, CH4, NH3, H2S, PH3, HCN, C2H2, OH, Na, K, TiO, VO, HMBF, Fe;
-const domain = "http://localhost:5000";
+const domain = "http://api.dexterslabasu.com:5000";
 
 ///////////////////////////////////////////////
 //FUNCTIONS
@@ -11,7 +11,7 @@ const domain = "http://localhost:5000";
 
 //GET JSON FROM API (GENERIC)
 async function callAPI(url, format = 'json', content_type = 'application/json', accept = 'application/json') {
-    //API CALL TO LOCALHOST:5000/path
+    //API CALL TO /path
     try {
         const fileURL = url;
         const requestResponse = await fetch(fileURL, {
@@ -44,7 +44,7 @@ async function callAPI(url, format = 'json', content_type = 'application/json', 
 
 //GET MODEL DATA FROM API
 async function getModelData(planet, redist, logZ, CtoO, logKzz) {
-    //API CALL TO LOCALHOST:5000/planet/getmodel
+    //API CALL TO /planet/getmodel
     return await callAPI(`${domain}/${planet}/getmodel?redist=${redist}&logZ=${logZ}&CtoO=${CtoO}&logKzz=${logKzz}`, 'json');
 }
 
@@ -60,18 +60,18 @@ function getfireFlyReduction() {
 
 //RETRIEVES ATMOSPHERIC STATE DATA FROM API
 async function getAtmStateData() {
-    //API CALL TO LOCALHOST:5000/atmstate
+    //API CALL TO /atmstate
     return [T, P, H2, He, H2O, CO, CO2, CH4, NH3, H2S, PH3, HCN, C2H2, OH, Na, K, TiO, VO, HMBF, Fe] = await callAPI(`${domain}/atmstate`, 'json');
 }
 
 //RETRIEVES ATMOSPHERIC STATE IMAGE FROM API AND SETS IT TO AN IMAGE ELEMENT
 async function getAtmStateImage(width, height) {
-    //API CALL TO LOCALHOST:5000/atmstate/plot
+    //API CALL TO /atmstate/plot
     return await callAPI(`${domain}/atmosphericstructure/plot?width=${width}&height=${height}`, format = 'blob', content_type = 'image/png', accept = 'image/png');
 }
 
 async function loadPlanetChoices() {
-    //API CALL TO LOCALHOST:5000/planets
+    //API CALL TO /planets
     let planets = await callAPI(`${domain}/calculator/planetlist`, 'json');
     let planetSelect = document.getElementById("planetSelect");
     for (let i = 0; i < planets.length; i++) {

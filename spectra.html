@@ -37,12 +37,24 @@
         <br><br>
         <center><h5 class = "researchTitle"><b>INTERACTIVE EXOPLANET SPECTRA VISUALIZER</b></h5></center>
         <br>
+
+        <!-- INTRODUCTION BLURB -->
         <div class = "textHousing" style="display: flex; justify-content: center; align-content: center;">
 			<div class="textSection">
-				<p>Welcome to our interactive exoplanet spectra visualization tool! To observe exoplanet atmospheres, we watch them with telescopes and record their “spectra”; the properties of the atmosphere (e.g., gas composition, temperature, etc.) influence what this spectrum will look like.
-                    With the help of sliders shown, you can  manipulate various properties and change how the spectrum is visualized. Click and drag the sliders to the left or right to adjust the associated properties.
-
+				<p>
+                    Welcome to our interactive exoplanet spectra tool! We have developed a user-friendly, open-source widget that allows users to compare modeled transmission spectra to telescope observations. Stay tuned for more planets and public observations in the future!
 				</p>
+                <p>
+                    Spectra are produced from 1D radiative-convective-thermochemical equilibrium models generated for a given planet (ScCHIMERA Code: Iyer et al. 2023; planet/star parameters sourced from TEPCat). Each grid varies over the following parameters: atmosphere metallicity, the carbon-to-oxygen (C/O) ratio, and a redistribution factor for scaling temperature.
+                </p>
+                <ul>
+                    <li><b>Metallicity:</b> Log value of the planet’s metallicity relative to solar metallicity (i.e. Solar Metallicity = 0).</li>
+                    <li><b>C/O:</b> The ratio of Carbon to Oxygen in a planet’s atmosphere.</li>
+                    <li><b>Redistribution:</b> A climate parameter indicating how much energy a hot Jupiter’s atmosphere can move from the day side to the night side of the planet. Redistribution = (T<sub>day</sub> / T<sub>equilibrium</sub>)^4.</li>
+                </ul>
+                <p>
+                    Additionally, users may select gasses to turn them “off” in the spectrum, indicating where their features are present. This tool is intended only for educational purposes and “by-eye” fits, but a chi-squared value comparing data to the model is produced.
+                </p>
 			</div>
 		</div>
         <br><br>
@@ -261,8 +273,8 @@
             </div>
         </div>
         <br><br>
-        <a href="path_to_file" id="download" download="exoplanet_data">Download Spectrum Data</a>
-        <br><br>
+        <!--<a href="path_to_file" id="download" download="exoplanet_data">Download Spectrum Data</a>
+        <br><br>-->
         <script>
             const sliders = document.querySelectorAll('.slider');
             sliders.forEach(slider => {
@@ -278,4 +290,14 @@
         </script>
         <script src="spectra.js"></script>
     </body>
+            <!-- CITATIONS FOOTER -->
+            <div class = "textHousing" style="display: flex; justify-content: left; align-content: center; margin: 15px">
+                <div class="textSection p-4">
+                    <h6><b>Citations:</b></h6>
+                    <br>
+                    <p>Widget Developers: Zane Schenk, Jason Roberts, Jagger Verdugo, Sophie Phillips, Lindsey Wiser, Michael Line</p>
+                    <p>Iyer, A. R., Line, M. R., Muirhead, P. S., et al. 2023, ApJ, 944, 41. doi:10.3847/1538-4357/acabc2</p>
+                    <p>Southworth, J. 2011, MNRAS, 417, 2166. doi:10.1111/j.1365-2966.2011.19399.x</p>
+                </div>
+            </div>
 </html>

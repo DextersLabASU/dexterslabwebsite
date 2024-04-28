@@ -217,6 +217,18 @@ li a {
   font-size: 16px;
 }
 
+/* Hover effects on dropdown */
+.nav-item.dropdown .nav-link:hover {
+    transform: scale(1.1);
+    color: black;
+    /* color: var(--secondary-color);
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    text-underline-offset: 16px;
+    text-decoration-thickness: 4px;
+    text-decoration-color: black; */
+  }
+
 .dropdown-menu {
   border-radius: 6px;
   border: 2px solid black;
@@ -318,7 +330,7 @@ p1 {
   border: none;
   color: white;
   padding: 15px 32px;
-  margin: 15px;
+  margin-left: 40px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
