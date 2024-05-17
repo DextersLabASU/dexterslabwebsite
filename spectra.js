@@ -3,7 +3,7 @@ const xsecs = (1800, 20000);
 const labels = ["$f$", "[M/H]", "C/O", "$\\times R_p$", "log$_{10}$$\\kappa_{cld}$"];
 const hdr = 'P[bar]                T[K]';
 let T, P, H2, He, H2O, CO, CO2, CH4, NH3, H2S, PH3, HCN, C2H2, OH, Na, K, TiO, VO, HMBF, Fe;
-const domain = "http://api.dexterslabasu.com:5000";
+const domain = "https://api.dexterslabasu.com:5000";
 
 ///////////////////////////////////////////////
 //FUNCTIONS
